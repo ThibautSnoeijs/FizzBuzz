@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(){int n=0,x;
-	for(;;n++){x=0;
-		if(!(n%3)){x++;printf("Fizz");};
-		if(!(n%5)){x++;printf("Buzz");};
-		if(!x)printf("%i",n);
-		printf("\n");};}
+int main(){int n=0;
+	for(;;n++){
+		if(!(n%3))printf("Fizz");
+		if(!(n%5))printf("Buzz");
+		if(!(!(n%3)|!(n%5)))printf("%i",n);
+		puts("");;};}
