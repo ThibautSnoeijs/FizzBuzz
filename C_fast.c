@@ -13,4 +13,3 @@ int main(){short n=1;char x[9];strcpy(x,"");
 		else printf("%i\n",n);
 		};
 	}
-
