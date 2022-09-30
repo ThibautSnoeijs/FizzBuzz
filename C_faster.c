@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){int n=1, x;
-	for(;n<12345678;n++){
-		x=0;
+const int
+	first_n	=1,
+	last_n	=12345678;
+
+int n,x;
+
+int main(){
+	for(n=first_n;n<=last_n;n++){
+		x=!(n%3);
 		if(!(n%5))x+=2;
-		if(!(n%3))x+=1;
 		switch (x){
 			case 0:printf("%d\n",n);break;
 			case 1:puts("Fizz");break;
@@ -14,5 +19,3 @@ int main(){int n=1, x;
 			}
 		}
 	}
-
-
