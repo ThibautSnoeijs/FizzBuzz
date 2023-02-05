@@ -18,7 +18,7 @@ int main(){
 		switch (x){
 			case 0:printf("%d\n",n);break;
 			case 1:puts("Fizz");f=0;break;
-			case 2:puts("Buzz");f=0;break;
+			case 2:puts("Buzz");b=0;break;
 			case 3:puts("FizzBuzz");f,b=0,0;break;
 			default:__builtin_unreachable();
 			}
